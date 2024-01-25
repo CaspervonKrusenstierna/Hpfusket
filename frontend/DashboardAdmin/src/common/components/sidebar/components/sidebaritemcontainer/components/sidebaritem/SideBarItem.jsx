@@ -1,16 +1,16 @@
 import React from 'react'
-import "./SideBarItem.css"
-import { Link } from 'react-router-dom'
+import "../sidebaritem/SideBarItem.css" // use same styles
 
 const SideBarItem = (props) => {
-  return (
-    <button className='SideBarItem'>
-      <Link to={props.href} style={{textDecoration: "none", display:"flex", flexDirection: "row", height: "65px", width: "100%", alignItems: "center"}}>
+    function onAnchorClick(){
+        window.location.href = props.href
+    }
+    return (
+        <button onClick={onAnchorClick} className='SideBarItem'>
             <img className='SideBarItem-Icon' src={props.icon}></img>
             <p className='SideBarItem-Text'> {props.text} </p>
-      </Link>
-    </button>
-  )
+        </button>
+      )
 }
 
 export default SideBarItem

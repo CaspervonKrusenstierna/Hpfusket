@@ -29,52 +29,11 @@ const GetSessionInfo = async (req, res) => {
                 })
             }
         }
-        if(req.body.extended){
-            let decodedAccessToken = jwt.verify(req.cookies.token, process.env.ACCESS_TOKEN_SECRET)
-            if(!decodedAccessToken.isPasswordVerified){
-                if(!req.body.password){
-                    return res.status(500).json({
-                        success: false
-                      });
-                }
-                const HasRightPassword = await bcrypt.compare(req.body.password, user.password);
-
-                if(!HasRightPassword){
-                    return res.status(500).json({
-                        success: false,
-                        result: null,
-                        message: 'Felaktigt lösenord',
-                      });
-                }
-
-                let token = await Refresh(req.cookies.jwt, true);
-                res.cookie('token', token, {
-                    maxAge: req.body.remember ? 365 * 24 * 60 * 60 * 1000 : null,
-                    secure: true,
-                    domain: req.hostname,
-                    Path: '/'});
-            }
-
-            return res.status(200).json({
-                success: true,
-                name: user.name,
-                email: user.email,
-                password: user.password,
-                privilege: user.privilege,
-                saldo: user.saldo,
-                settings: user.settings
+        return res.status(200).json({
+            loggedIn: true,
+            privilege: user.privilege
             })
         }
-        else{
-            return res.status(200).json({
-                loggedIn: true,
-                name: user.name,
-                privilege: user.privilege,
-                saldo: user.saldo,
-                settings: user.settings
-            })
-        }
-    }
 }
 
 module.exports = GetSessionInfo;

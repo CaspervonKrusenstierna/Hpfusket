@@ -52,6 +52,12 @@ const Login = async (req, res) => {
           });
     }
 
+    let Expiry = "1d"
+    if(req.body.remember){
+      console.log("hello");
+      Expiry = "7d"
+    }
+
     const refreshToken = jwt.sign(
         {
           id: user.loggedOutTokenIds.length+1,
@@ -59,17 +65,16 @@ const Login = async (req, res) => {
           privilege: user.privilege
         },
         process.env.REFRESH_TOKEN_SECRET,
-        { expiresIn: "1d" }
+        { expiresIn: Expiry }
       );
 
-      res.cookie('jwt', refreshToken, {
-        maxAge: 3 * 24 * 60 * 60 * 1000,
-        domain: req.hostname,
-        Path: '/'})
+    res.cookie('jwt', refreshToken, {
+      maxAge: 3 * 24 * 60 * 60 * 1000,
+      domain: req.hostname,
+      Path: '/'})
 
     res.cookie('token', Refresh(refreshToken, true), {
-      maxAge: req.body.remember ? 365 * 24 * 60 * 60 * 1000 : null,
-      
+      maxAge: req.body.remember ? 7 * 24 * 60 * 60 * 1000 : 1 * 24 * 60 * 60 * 1000,
       domain: req.hostname,
       Path: '/'})
 

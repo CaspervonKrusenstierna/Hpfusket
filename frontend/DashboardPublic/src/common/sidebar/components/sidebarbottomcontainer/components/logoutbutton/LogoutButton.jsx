@@ -3,7 +3,7 @@ import "./LogoutButton.css"
 
 const LogoutButton = () => {
   async function LogOut(){
-    const response = await fetch("http://localhost:3000/logout", {
+    const response = await fetch("http://192.168.0.132:3000/logout", {
       method: "POST",
       mode: "cors",
       cache: "no-cache",

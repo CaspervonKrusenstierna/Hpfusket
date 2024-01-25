@@ -5,6 +5,7 @@ import {UserImg, UnlockImg} from  "../../../common/assets"
 
 let Username = "";
 let Password = "";
+let RememberMe = false;
 
 const LoginBox = (props) => {
     const [error, setError] = useState();
@@ -20,7 +21,7 @@ const LoginBox = (props) => {
         },
         redirect: "follow",
         referrerPolicy: "no-referrer",
-        body: JSON.stringify({"name": Username, "password": Password})
+        body: JSON.stringify({"name": Username, "password": Password, "remember": RememberMe})
       }).then((res) => res.json());
   
       if(response.success){
@@ -40,7 +41,7 @@ const LoginBox = (props) => {
               <Input onChange={(e) => {Username = e.target.value}} label="Användarnamn" img={UserImg}></Input>
               <Input onChange={(e) => {Password = e.target.value}} label="Lösenord" img={UnlockImg}></Input>
               <div className='LoginBox-BottomContainer'>
-                <CheckBoxButton></CheckBoxButton>
+                <CheckBoxButton onChange={(e) => {}} text="Kom ihåg mig"></CheckBoxButton>
                 <AnchorButton text="Glömt ditt lösenord?" onClick={props.onForgotPassword}></AnchorButton>
               </div>
               <SubmitButton onClick={onSubmit} text="Logga in"></SubmitButton>

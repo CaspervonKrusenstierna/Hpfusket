@@ -1,5 +1,5 @@
 .SideBarItem{
-    padding-left: 8%;
+    padding-left: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,7 +29,10 @@
 
 @media screen and (max-width: 700px) {
     .SideBarItem-Text{
-        font-size: 14px;
+        font-size: 17px;
+    }
+    .SideBarItem{
+        padding-left: 10px;
     }
 }
 

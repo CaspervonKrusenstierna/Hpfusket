@@ -21,7 +21,7 @@ const schema = joi.object({
   });
 
 const Register = async (req, res) => {
-    const { error, value }= schema.validate({name: req.body.name, password: req.body.password, email: req.body.email});
+    const { error, value } = schema.validate({name: req.body.name, password: req.body.password, email: req.body.email});
     if(error){
       return res.status(500).json({
         success: false,
