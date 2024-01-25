@@ -1,0 +1,13 @@
+.AnswerSubmissionContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+    .AnswerSubmissionContainer{
+       margin-left: 75px;
+    }
+}

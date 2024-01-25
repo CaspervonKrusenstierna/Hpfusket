@@ -1,0 +1,9 @@
+.PaymentOption{
+    width: 100px;
+    height: 140px;
+    background-color: transparent;
+    border: transparent;
+}
+.PaymentOption:hover{
+    cursor: pointer;
+}

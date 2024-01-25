@@ -1,0 +1,18 @@
+.InfoBox{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width:25%;
+}
+.InfoBox-Icon{
+    width: 75px;
+}
+.InfoBox-HeaderText{
+    font-size: 32px;
+}
+
+@media screen and (max-width: 800px) {
+    .InfoBox{
+        width: 300px;
+    }
+  }

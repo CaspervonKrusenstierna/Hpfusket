@@ -1,0 +1,73 @@
+.InfoContainer{
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    width: 100%;
+    gap: 20%;
+}
+.InfoContainer-TextContainer{
+    align-self: center;
+    padding: 0;
+}
+.InfoContainer-headertext{
+    font-weight: 700;
+    line-height: 58px;
+    font-size: 50px;
+}
+.InfoContainer-text{
+    padding-top: 20px;
+    font-size: 28px;
+}
+
+@media screen and (max-width: 1100px) {
+    .InfoContainer-headertext{
+        line-height: normal;
+        font-size: 40px;
+    }
+    .InfoContainer-text{
+        font-size: 28px;
+    }
+    .InfoContainer{
+        gap: 10%;
+      }
+  }
+  @media screen and (max-width: 800px) {
+    .InfoContainer-headertext{
+        line-height: normal;
+        font-size: 34px;
+    }
+    .InfoContainer-text{
+        font-size: 25px;
+    }
+    .InfoContainer{
+        flex-direction: column;
+        width: 100%;
+      }
+  }
+
+  @media screen and (max-width: 600px) {
+    .InfoContainer-headertext{
+        line-height: normal;
+        font-size: 31px;
+    }
+    .InfoContainer-text{
+        font-size: 23px;
+    }
+  }
+
+
+  @media screen and (max-width: 500px) {
+    .InfoContainer-headertext{
+        line-height: normal;
+        font-size: 25px;
+    }
+    .InfoContainer-text{
+        font-size: 18px;
+    }
+  }
+
+  
+.info-img{
+    background: transparent;
+    width:350px;
+}

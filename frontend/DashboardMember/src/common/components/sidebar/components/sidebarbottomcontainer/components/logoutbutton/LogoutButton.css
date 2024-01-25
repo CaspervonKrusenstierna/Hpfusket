@@ -1,0 +1,30 @@
+.LogoutButton{
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: transparent;
+    margin-bottom: 30px;
+}
+.LogoutButton:hover{
+    cursor: pointer;
+}
+.LogoutButton-img{
+    width: 40px;
+}
+.LogoutButton-text{
+    font-weight: 700;
+    color: white;
+    font-size:  22px;
+    transition-duration: 0.3s;
+}
+
+
+@media screen and (max-height: 600px) {
+    .LogoutButton{
+        margin-bottom: 0px;
+    }
+}

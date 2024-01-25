@@ -1,0 +1,10 @@
+.AnswerSubmission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.OptionsContainer{
+    display: flex;
+    gap: 10px;
+}

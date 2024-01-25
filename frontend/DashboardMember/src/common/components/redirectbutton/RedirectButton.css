@@ -1,0 +1,14 @@
+.RedirectButton{
+    width: 220px;
+    height: 60px;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: #FA5B35;
+    font-size: 20px;
+    transition-duration: 0.5s;
+    font-weight: bold;
+}
+.RedirectButton:hover{
+    cursor:pointer;
+    background-color: #fa5c35e2;
+}

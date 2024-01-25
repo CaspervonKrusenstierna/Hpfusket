@@ -1,0 +1,26 @@
+.ActiveTest{
+    height: 300px;
+}
+
+.ActiveTest-TopContainer{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    gap: 30px;
+}
+.ActiveTest-TopContainer-Top{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ActiveTest-TopContainer-Bottom{
+    text-align: center;
+}
+
+.ActiveTest-BottomContainer{
+    gap: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

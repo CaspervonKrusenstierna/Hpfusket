@@ -1,0 +1,63 @@
+.PaymentPage{
+    width: 90vw;
+    min-height: 95vh;
+    margin-left: 10vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16vh;
+    gap: 10vh;
+}
+.PricingBoxContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3vw;
+}
+.Title{
+    font-size: 50px;
+    font-weight: 700;
+}
+.unfocus{
+    pointer-events: none;
+    user-select: none;
+}
+.DarknessEffect{
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.PricingBoxSubContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+@media screen and (max-width: 1400px) {
+    .PricingBoxContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
+@media screen and (max-width: 900px) {
+    .PricingBoxSubContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .PaymentPage{
+        padding-top: 10vh;
+    }
+    .PricingBoxContainer{
+        margin-left: 80px;
+    }
+    .Title{
+        margin-left: 80px;
+    }
+  }

@@ -1,0 +1,14 @@
+.InfoBoxContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .InfoBoxContainer{
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+  }

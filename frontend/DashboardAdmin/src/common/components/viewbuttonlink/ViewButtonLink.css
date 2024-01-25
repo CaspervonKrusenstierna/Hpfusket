@@ -1,0 +1,11 @@
+.ViewButtonLink{
+    background: transparent;
+    border: transparent;
+    width: 100px;
+}
+.ViewButtonLink:hover{
+    cursor: pointer;
+}
+.ViewButtonLink-img{
+    height: 50px;
+}

@@ -1,0 +1,21 @@
+.Tests{
+    display:flex;
+    flex-direction: column;
+    background: #2E475D;
+    width: 500px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .Tests{
+        width: 300px;
+    }
+  }
+
+
+  @media screen and (max-width: 500px) {
+    .Tests{
+        width: 225px;
+    }
+  }

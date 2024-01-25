@@ -1,0 +1,11 @@
+.ViewButton{
+    background: transparent;
+    border: transparent;
+    width: 100px;
+}
+.ViewButton:hover{
+    cursor: pointer;
+}
+.ViewButton-img{
+    height: 50px;
+}

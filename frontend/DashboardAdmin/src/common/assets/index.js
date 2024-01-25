@@ -1,0 +1,7 @@
+export {default as HouseSolidSvg} from "./house-solid.svg"
+export {default as CartShoppingSolidSvg} from "./cart-shopping-solid.svg"
+export {default as CircleInfoSolidSvg} from "./circle-info-solid.svg"
+export {default as ScrewDriverWrenchSolidSvg} from "./screwdriver-wrench-solid.svg"
+export {default as ArrowRightSolid} from "./arrow-right-solid.svg"
+export {default as EnvelopeImg} from "./envelope-regular.svg"
+export {default as CodeSolidSvg} from "./code-solid.svg"

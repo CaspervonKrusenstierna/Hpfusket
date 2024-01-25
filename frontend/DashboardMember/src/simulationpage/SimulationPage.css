@@ -1,0 +1,9 @@
+.SimulationPage{
+    width: 90vw;
+    min-height: 100vh;
+    margin-left: 10vw;
+    display:flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+

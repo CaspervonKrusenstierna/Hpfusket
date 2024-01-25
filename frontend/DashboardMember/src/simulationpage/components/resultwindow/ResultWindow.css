@@ -1,0 +1,38 @@
+.ResultWindow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 400px;
+    height: 350px;
+    margin-top: calc(50vh - 175px);
+    margin-left: calc(50% - 200px);
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    background-color: #FA5B35;
+}
+
+.ResultWindow-Text{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+@media screen and (max-width: 1400px) {
+    .ResultWindow{
+        width: 250px;
+        height: 150px;
+        margin-top: calc(50vh - 75px);
+        margin-left: calc(50% - 100px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .ResultWindow{
+        width: 150px;
+        height: 100px;
+        margin-top: calc(50vh - 50px);
+        margin-left: calc(50% - 35px);
+    }
+}

@@ -1,0 +1,41 @@
+.SideBarItem{
+    padding-left: 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    background-color: transparent;
+    border: transparent;
+    transition-duration: 0.3s;
+    border-radius: 5px;
+    overflow-y: hidden;
+}
+.SideBarItem:hover{
+    background-color: rgb(240, 141, 116);
+    cursor: pointer;
+}
+.SideBarItem-Icon{
+    height: 30px;
+    width: 30%;
+}
+.SideBarItem-Text{
+    font-weight: 700;
+    padding-left: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .SideBarItem-Text{
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-height: 600px) {
+    .SideBarItem{
+        height: 50px;
+    }
+}

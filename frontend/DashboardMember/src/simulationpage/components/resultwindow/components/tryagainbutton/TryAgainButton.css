@@ -1,0 +1,13 @@
+.TryAgainButton{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #FA5B35;
+    color: black;
+    font-weight:bold;
+    border-style: solid;
+    border-color: black;
+}
+.TryAgainButton:hover{
+    cursor: pointer;
+}
