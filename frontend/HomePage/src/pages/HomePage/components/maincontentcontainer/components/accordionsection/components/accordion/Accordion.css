@@ -1,0 +1,69 @@
+.Accordion{
+    width: 700px;
+    border: 1px;
+}
+.Accordion-Question{
+    background-color: transparent;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+}
+.Accordion-Question:hover{
+    cursor: pointer;
+}
+.Accordion-Question-Text{
+    width: 80%;
+    text-align: left;
+    font-style: bold;
+    font-size: 24px;
+}
+.Accordion-Question-Chevron{
+    width: 50px;
+    transition: transform 0.25s cubic-bezier(0, 0, 0, 1);
+}
+.Accordion-Question-ChevronSelected{
+    width: 50px;
+    transition: transform 0.25s cubic-bezier(0, 0, 0, 1);
+    transform: rotate(180deg);
+}
+.Accordion-ContentHidden{
+    height: 0px;
+    transition: height 0.25s cubic-bezier(0, 0, 0, 1);
+}
+
+.Accordion-Content{
+    background-color: transparent;
+    height: 80px;
+    transition: height 0.25s cubic-bezier(0, 0, 0, 1);
+}
+.Accordion-Content-Text{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+    .Accordion{
+        background: transparent;
+        width: 500px;
+        border: 1px;
+    }
+    .Accordion-Content-Text{
+        font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .Accordion{
+        background: transparent;
+        width: 300px;
+        border: 1px;
+    }
+    .Accordion-Content-Text{
+        font-size: 14px;
+    }
+    .Accordion-Question-Text{
+        font-size: 18px;
+    }
+  }

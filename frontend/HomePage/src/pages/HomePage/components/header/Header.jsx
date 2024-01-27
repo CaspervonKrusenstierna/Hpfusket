@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {NavBarButtonRedirect, NavBarLogoRedirect, NavBarRedirect} from "./components"
 import "./Header.css"
-import NavBarSupportRedirect from './components/navbarsupportredirect/NavBarSupportRedirect';
+import NavBarConditionalRedirect from './components/NavBarConditionalRedirect/NavBarConditionalRedirect';
 
 let BigHeaderContent;
 let SmallHeaderContent;
@@ -36,12 +36,12 @@ const Header = (props) => {
         setHeaderContent(SmallHeaderContent);
       }
     }
-    function OnSupportClick(){
+    function OnPricesClick(){
       if(!props.loggedIn){
-        props.onLoginClick("/dashboard/support");
+        props.onLoginClick("/dashboard/payment");
       }
       else{
-        window.location.href = "/dashboard/support"
+        window.location.href = "/dashboard/payment"
       }
     }
 
@@ -51,7 +51,7 @@ const Header = (props) => {
   if(props.loggedIn){
     BigHeaderContent = <>
     <NavBarLogoRedirect></NavBarLogoRedirect>
-    <NavBarSupportRedirect onClick={OnSupportClick}></NavBarSupportRedirect>
+    <NavBarConditionalRedirect text="Priser" onClick={OnPricesClick}></NavBarConditionalRedirect>
     <NavBarRedirect redirect="Frågor" href="#QuestionsSection"></NavBarRedirect>
     <NavBarButtonRedirect text="Dashboard" onClick={() => {window.location.href = "/dashboard"}}></NavBarButtonRedirect>
     </>
@@ -63,7 +63,7 @@ const Header = (props) => {
   else{
     BigHeaderContent = <>
     <NavBarLogoRedirect></NavBarLogoRedirect>
-    <NavBarSupportRedirect onClick={OnSupportClick}></NavBarSupportRedirect>
+    <NavBarConditionalRedirect text="Priser" onClick={OnPricesClick}></NavBarConditionalRedirect>
     <NavBarRedirect redirect="Frågor" href="#QuestionsSection"></NavBarRedirect>
     <div className='Header-ButtonContainer'>
     <NavBarButtonRedirect onClick={() => {props.onLoginClick("/dashboard")}} text="Login"></NavBarButtonRedirect>
@@ -81,7 +81,6 @@ const Header = (props) => {
 
   previousSize = window.innerWidth
   if(window.innerWidth >= SmallHeaderThreshhold){
-    console.log("helllo");
     setHeaderContent(BigHeaderContent);
   }
   else{
