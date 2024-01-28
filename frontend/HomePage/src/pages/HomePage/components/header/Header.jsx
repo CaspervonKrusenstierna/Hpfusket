@@ -52,7 +52,7 @@ const Header = (props) => {
     BigHeaderContent = <>
     <NavBarLogoRedirect></NavBarLogoRedirect>
     <NavBarConditionalRedirect text="Priser" onClick={OnPricesClick}></NavBarConditionalRedirect>
-    <NavBarRedirect redirect="Frågor" href="#QuestionsSection"></NavBarRedirect>
+    <NavBarRedirect redirect="Frågor" href="#AccordionSection"></NavBarRedirect>
     <NavBarButtonRedirect text="Dashboard" onClick={() => {window.location.href = "/dashboard"}}></NavBarButtonRedirect>
     </>
     SmallHeaderContent = <>
@@ -64,7 +64,7 @@ const Header = (props) => {
     BigHeaderContent = <>
     <NavBarLogoRedirect></NavBarLogoRedirect>
     <NavBarConditionalRedirect text="Priser" onClick={OnPricesClick}></NavBarConditionalRedirect>
-    <NavBarRedirect redirect="Frågor" href="#QuestionsSection"></NavBarRedirect>
+    <NavBarRedirect redirect="Frågor" href="#AccordionSection"></NavBarRedirect>
     <div className='Header-ButtonContainer'>
     <NavBarButtonRedirect onClick={() => {props.onLoginClick("/dashboard")}} text="Login"></NavBarButtonRedirect>
     <NavBarButtonRedirect onClick={props.onRegisterClick} text="Register"></NavBarButtonRedirect>
