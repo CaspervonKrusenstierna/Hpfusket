@@ -39,7 +39,7 @@ const LoginBox = (props) => {
             <div className='inputcontainer-login'>
               <ErrorMessage message={error}></ErrorMessage>
               <Input onChange={(e) => {Username = e.target.value}} label="Användarnamn" img={UserImg}></Input>
-              <Input onChange={(e) => {Password = e.target.value}} label="Lösenord" img={UnlockImg}></Input>
+              <Input hide={true} onChange={(e) => {Password = e.target.value}} label="Lösenord" img={UnlockImg}></Input>
               <div className='LoginBox-BottomContainer'>
                 <CheckBoxButton onChange={(e) => {}} text="Kom ihåg mig"></CheckBoxButton>
                 <AnchorButton text="Glömt ditt lösenord?" onClick={props.onForgotPassword}></AnchorButton>
@@ -57,7 +57,7 @@ const LoginBox = (props) => {
           </div>
           <div className='inputcontainer-login'>
             <Input onChange={(e) => {Username = e.target.value}} label="Användarnamn" img={UserImg}></Input>
-            <Input onChange={(e) => {Password = e.target.value}} label="Lösenord" img={UnlockImg}></Input>
+            <Input hide={true} onChange={(e) => {Password = e.target.value}} label="Lösenord" img={UnlockImg}></Input>
             <div className='LoginBox-BottomContainer'>
                 <CheckBoxButton></CheckBoxButton>
                 <AnchorButton text="Glömt ditt lösenord?" onClick={props.onForgotPassword}></AnchorButton>

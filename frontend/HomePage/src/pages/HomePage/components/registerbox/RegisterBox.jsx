@@ -46,8 +46,8 @@ const RegisterBox = (props) => {
             <ErrorMessage message={error}></ErrorMessage>
             <Input onChange={(e) => {Username = e.target.value}} label="Användarnamn" img={UserImg}></Input>
             <Input onChange={(e) => {Email = e.target.value}} label="Email" img={EnvelopeImg}></Input>
-            <Input onChange={(e) => {Password = e.target.value}} label="Lösenord" img={UnlockImg}></Input>
-            <Input onChange={(e) => {ConfirmPassword = e.target.value}} label="Bekräfta lösenord" img={UnlockImg}></Input>
+            <Input hide={true} onChange={(e) => {Password = e.target.value}} label="Lösenord" img={UnlockImg}></Input>
+            <Input hide={true} onChange={(e) => {ConfirmPassword = e.target.value}} label="Bekräfta lösenord" img={UnlockImg}></Input>
             <SubmitButton onClick={onSubmit} text="Registrera"></SubmitButton>
           </div>
       </div>
@@ -62,8 +62,8 @@ const RegisterBox = (props) => {
         <div className='inputcontainer-register'>
           <Input onChange={(e) => {Username = e.target.value}} label="Användarnamn" img={UserImg}></Input>
           <Input onChange={(e) => {Email = e.target.value}} label="Email" img={EnvelopeImg}></Input>
-          <Input onChange={(e) => {Password = e.target.value}} label="Lösenord" img={UnlockImg}></Input>
-          <Input onChange={(e) => {ConfirmPassword = e.target.value}} label="Bekräfta lösenord" img={UnlockImg}></Input>
+          <Input hide={true} onChange={(e) => {Password = e.target.value}} label="Lösenord" img={UnlockImg}></Input>
+          <Input hide={true} onChange={(e) => {ConfirmPassword = e.target.value}} label="Bekräfta lösenord" img={UnlockImg}></Input>
           <SubmitButton onClick={onSubmit} text="Registrera"></SubmitButton>
         </div>
     </div>

@@ -7,6 +7,11 @@ const GetTestAnswers = async (req, res) => {
     var today = new Date();
     var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
     let CurrentTest = await TestDay.findOne({date: date});
+    if(!CurrentTest){
+        return res.status(500).json({
+            success: false,
+          });
+    }
     let TestAnswers = CurrentTest.tests[TestNumber-1].Answers;
     let TestType = CurrentTest.tests[TestNumber-1].TestType;
     /*
