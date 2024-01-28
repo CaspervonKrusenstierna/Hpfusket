@@ -11,6 +11,7 @@ root.render(
   </React.StrictMode>
 );
 */
+
 const response = await fetch("http://192.168.0.132:3000/getsessioninfo", {
   method: "POST",
   mode: "cors",

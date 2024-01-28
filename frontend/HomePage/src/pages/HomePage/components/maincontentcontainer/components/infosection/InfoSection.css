@@ -2,6 +2,5 @@
     display:flex;
     flex-direction: column;
     background-color: #FFFFFF;
-    gap: 100px;
     padding-bottom: 100px;
 }
