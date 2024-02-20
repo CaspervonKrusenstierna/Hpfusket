@@ -25,7 +25,7 @@ function PlayLetter(letter){
     }
 }
 function SendAnswers(){
-    const response = fetch("http://192.168.0.132:3000/dashboard/testanswers", {
+    const response = fetch("http://127.0.0.1:3000/dashboard/testanswers", {
         method: "POST",
         mode: "cors",
         cache: "no-cache",

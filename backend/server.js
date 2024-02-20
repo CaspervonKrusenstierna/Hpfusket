@@ -26,4 +26,4 @@ app.use("/dashboard/admin", Auth.Auth2, express.static(path.join(__dirname, "bui
 app.use(publicRouter);
 app.use(memberRouter);
 app.use(adminRouter);
-app.listen(3000, "192.168.0.132", () => {console.log("connected")});
+app.listen(3000, "127.0.0.1", () => {console.log("connected")});

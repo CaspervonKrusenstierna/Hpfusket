@@ -52,7 +52,7 @@ function StartCheat(settings){
     let TimeOutIds = [];
     for(let i = 0; 240 > i; i++){
         TimeOutIds.push(setTimeout(async () => {
-            const response = await fetch("http://192.168.0.132:3000/testanswer", {
+            const response = await fetch("http://127.0.0.1:3000/testanswer", {
                 method: "GET",
                 mode: "cors",
                 cache: "no-cache",

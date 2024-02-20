@@ -8,10 +8,10 @@ const SideBarItemContainer = (props) => {
   useEffect(() => {
     switch(props.privilege){
       case 1:
-        setSideBarItems(<><SideBarItemAnchor icon={CartShoppingSolidSvg} text="Priser" href="http://192.168.0.132:3000/dashboard/payment"></SideBarItemAnchor><SideBarItem href="/dashboard/cheat" icon={CodeSolidSvg} text="Fusk"></SideBarItem><SideBarItem href="/dashboard/info" icon={CircleInfoSolidSvg} text="Info"></SideBarItem></>)
+        setSideBarItems(<><SideBarItemAnchor icon={CartShoppingSolidSvg} text="Priser" href="http://127.0.0.1:3000/dashboard/payment"></SideBarItemAnchor><SideBarItem href="/dashboard/cheat" icon={CodeSolidSvg} text="Fusk"></SideBarItem><SideBarItem href="/dashboard/info" icon={CircleInfoSolidSvg} text="Info"></SideBarItem></>)
         break;
       case 2:
-        setSideBarItems(<><SideBarItemAnchor icon={CartShoppingSolidSvg} text="Priser" href="http://192.168.0.132:3000/dashboard/payment"></SideBarItemAnchor><SideBarItem href="/dashboard/cheat" icon={CodeSolidSvg} text="Fusk"></SideBarItem><SideBarItem href="/dashboard/info" icon={CircleInfoSolidSvg} text="Info"></SideBarItem><SideBarItemAnchor href="http://192.168.0.132:3000/dashboard/admin" icon={ScrewDriverWrenchSolidSvg} text="Admin"></SideBarItemAnchor></>)
+        setSideBarItems(<><SideBarItemAnchor icon={CartShoppingSolidSvg} text="Priser" href="http://127.0.0.1:3000/dashboard/payment"></SideBarItemAnchor><SideBarItem href="/dashboard/cheat" icon={CodeSolidSvg} text="Fusk"></SideBarItem><SideBarItem href="/dashboard/info" icon={CircleInfoSolidSvg} text="Info"></SideBarItem><SideBarItemAnchor href="http://127.0.0.1:3000/dashboard/admin" icon={ScrewDriverWrenchSolidSvg} text="Admin"></SideBarItemAnchor></>)
         break;
       }
 

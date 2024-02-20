@@ -10,7 +10,7 @@ root.render(
     <App test = {{date: "", provpass: 5}}/>
   </React.StrictMode>);
 */
-const response = await fetch("http://192.168.0.132:3000/dashboard/test", {
+const response = await fetch("http://127.0.0.1:3000/dashboard/test", {
   method: "GET",
   mode: "cors",
   cache: "no-cache",

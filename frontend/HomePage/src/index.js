@@ -12,7 +12,7 @@ root.render(
 );
 */
 
-const response = await fetch("http://192.168.0.132:3000/getsessioninfo", {
+const response = await fetch("http://127.0.0.1:3000/getsessioninfo", {
   method: "POST",
   mode: "cors",
   cache: "no-cache",

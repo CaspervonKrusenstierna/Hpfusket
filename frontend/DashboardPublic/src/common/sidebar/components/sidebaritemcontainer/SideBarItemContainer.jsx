@@ -12,10 +12,10 @@ const SideBarItemContainer = (props) => {
           setSideBarItems(<><SideBarItem icon={CartShoppingSolidSvg} text="Priser" href="/dashboard/payment"></SideBarItem></>)
           break;
         case 1:
-          setSideBarItems(<><SideBarItem icon={CartShoppingSolidSvg} text="Priser" href="/dashboard/payment"><SideBarItemAnchor href="http://192.168.0.132:3000/dashboard/cheat" icon={CodeSolidSvg} text="Fusk"></SideBarItemAnchor></SideBarItem><SideBarItemAnchor href="/dashboard/info" icon={CircleInfoSolidSvg} text="Info"></SideBarItemAnchor></>)
+          setSideBarItems(<><SideBarItem icon={CartShoppingSolidSvg} text="Priser" href="/dashboard/payment"><SideBarItemAnchor href="http://127.0.0.1:3000/dashboard/cheat" icon={CodeSolidSvg} text="Fusk"></SideBarItemAnchor></SideBarItem><SideBarItemAnchor href="/dashboard/info" icon={CircleInfoSolidSvg} text="Info"></SideBarItemAnchor></>)
           break;
         case 2:
-          setSideBarItems(<><SideBarItem icon={CartShoppingSolidSvg} text="Priser" href="/dashboard/payment"></SideBarItem><SideBarItemAnchor href="http://192.168.0.132:3000/dashboard/cheat" icon={CodeSolidSvg} text="Fusk"></SideBarItemAnchor><SideBarItemAnchor href="/dashboard/info" icon={CircleInfoSolidSvg} text="Info"></SideBarItemAnchor><SideBarItemAnchor href="/dashboard/admin" icon={ScrewDriverWrenchSolidSvg} text="Admin"></SideBarItemAnchor></>)
+          setSideBarItems(<><SideBarItem icon={CartShoppingSolidSvg} text="Priser" href="/dashboard/payment"></SideBarItem><SideBarItemAnchor href="http://127.0.0.1:3000/dashboard/cheat" icon={CodeSolidSvg} text="Fusk"></SideBarItemAnchor><SideBarItemAnchor href="/dashboard/info" icon={CircleInfoSolidSvg} text="Info"></SideBarItemAnchor><SideBarItemAnchor href="/dashboard/admin" icon={ScrewDriverWrenchSolidSvg} text="Admin"></SideBarItemAnchor></>)
           break;
         }
     }, [])

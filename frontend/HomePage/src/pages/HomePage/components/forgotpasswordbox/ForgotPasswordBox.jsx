@@ -9,7 +9,7 @@ const ForgotPasswordBox = (props) => {
     const [hasSubmitted, setHasSubmitted] = useState(false);
 
     async function onSubmit(){
-      const response = await fetch("http://192.168.0.132:3000/forgotpassword", {
+      const response = await fetch("http://127.0.0.1:3000/forgotpassword", {
         method: "POST",
         mode: "cors",
         cache: "no-cache",

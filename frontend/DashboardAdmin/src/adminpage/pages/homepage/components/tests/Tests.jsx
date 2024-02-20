@@ -8,7 +8,7 @@ const Tests = (props) => {
   const [toRender, setToRender] = useState(<></>);
 
   async function CreateTest(){
-      const response = await fetch("http://192.168.0.132:3000/dashboard/test", {
+      const response = await fetch("http://127.0.0.1:3000/dashboard/test", {
         method: "POST",
         mode: "cors",
         cache: "no-cache",
