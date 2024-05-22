@@ -10,7 +10,7 @@ How it works:
 The people who know how to write the cheat split the test up 50/50. At the 45 minute mark both of the writers get the letters "A,B,C,D,E" 
 sequentially communicated to them 20 times with a pause between each letter trough the earpieces. When the letter corresponding to the writers answer 
 plays they move the phone taped to their leg or somewhere else a bit to signal the correct answer trough the phones accelerometer. Once the answers are submitted they are
-appended and sent out the customers.
+appended and sent out to the customers.
 
 Problems:
 The only thing that poses a problem to this method currently are the metal detector tests, 
