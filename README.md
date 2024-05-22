@@ -5,7 +5,7 @@ Requirements to pull the cheat off:
 1. 2 phones
 2. 2 people who can write the test
 3. 2 PingaOculto spy earpieces or equivalent
-4. Hardware to run the server on
+4. Something to run the server on
 
 How it works:
 The people who know how to write the cheat split the test up 50/50. At the 45 minute mark both of the writers get the letters "A,B,C,D,E" 
