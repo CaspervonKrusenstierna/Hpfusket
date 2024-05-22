@@ -12,5 +12,10 @@ sequentially communicated to them with a pause between each letter trough the ea
 is being played they move the phone taped to their leg or somewhere else a bit to signal their answer. Once the answers are submitted they are
 appended and then sent out the customers.
 
+Problems:
+The only thing that poses a problem for this method currently are the metal detector tests, 
+although they are rare and the consequences are minimal as you could just refuse to go trough them.
+If refuse your punishment will be that you wont be allowed to write the test for 2 years.
+
 Solution:
 Randomise the questions and/or answers on parts where the order doesnt matter such as ORD, MEK, XYZ, KVA and NOG. 
