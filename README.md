@@ -12,4 +12,5 @@ sequentially communicated to them with a pause between each letter trough the ea
 is being played they move the phone taped to their leg or somewhere else a bit to signal their answer. Once the answers are submitted they are
 appended and then sent out the customers.
 
-
+Solution:
+Randomise the questions and/or answers on parts where the order doesnt matter such as ORD, MEK, XYZ, KVA and NOG. 
