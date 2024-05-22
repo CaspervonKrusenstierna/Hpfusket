@@ -14,8 +14,8 @@ appended and sent out to the customers.
 
 Problems:
 The only thing that poses a problem to this method currently are the metal detector tests, 
-although they are rare and the consequences minimal as you could just refuse to go trough them.
-If refuse your punishment will be not being able to write the test for 2 years.
+although they are rare and the consequences minimal as you are not legally obliged to go trough them.
+If you refuse you won't be allowed to take the test for 2 years.
 
 Solution:
 Randomise the order of questions and/or answers on parts where the order doesnt matter such as ORD, MEK, XYZ, KVA and NOG. 
