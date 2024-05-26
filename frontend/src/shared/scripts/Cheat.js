@@ -1,10 +1,10 @@
-let ASound = new Audio(require('./letters/A.m4a'))
-let BSound = new Audio(require('./letters/B.m4a'))
-let CSound = new Audio(require('./letters/C.m4a'))
-let DSound = new Audio(require('./letters/D.m4a'))
-let ESound = new Audio(require('./letters/E.m4a'))
-let KvantSound = new Audio(require('./kvant.m4a'))
-let VerbSound = new Audio(require('./verb.m4a'))
+let ASound = new Audio(require('./sounds/A.m4a'))
+let BSound = new Audio(require('./sounds/B.m4a'))
+let CSound = new Audio(require('./sounds/C.m4a'))
+let DSound = new Audio(require('./sounds/D.m4a'))
+let ESound = new Audio(require('./sounds/E.m4a'))
+let KvantSound = new Audio(require('./sounds/kvant.m4a'))
+let VerbSound = new Audio(require('./sounds/verb.m4a'))
 
 function PlayLetter(letter){
     switch(letter){
