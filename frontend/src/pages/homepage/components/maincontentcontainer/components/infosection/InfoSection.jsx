@@ -6,8 +6,8 @@ import InfoContainer from './components/infocontainer/InfoContainer';
 const InfoSection = () => {
     return (
          <div className='InfoSection'>
-          <InfoContainer></InfoContainer>
-          <InfoBoxContainer></InfoBoxContainer>
+            <InfoContainer></InfoContainer>
+            <InfoBoxContainer></InfoBoxContainer>
          </div>
          );
 }
