@@ -1,4 +1,4 @@
-My high school project. Made to demonstrate weaknesses in the Swedish equivalent of the SAT "Högskoleprovet" with a fully functioning cheat.
+My high school project. Made to demonstrate weaknesses in the Swedish equivalent of the SAT, "Högskoleprovet", with a fully functioning cheat.
 
 Requirements to execute the cheat:
 
