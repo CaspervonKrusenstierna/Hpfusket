@@ -12,23 +12,29 @@ const HomePage = (props) => {
   const [toRender, setToRender] = useState(<></>)
 
   useEffect(() => {
+    let headerComponent = <Header loggedIn={props.isLoggedIn} onLoginClick={LoginClick} onRegisterClick={RegisterClick} disableSticky={false}/>
+    let darknessEffect = <div className='DarknessEffect'/>
+
     function OnExit(){
-      setToRender(<><Header loggedIn={props.isLoggedIn} onLoginClick={LoginClick} onRegisterClick={RegisterClick} disableSticky={false}></Header><MainContentContainer/><Footer/></>);
+      setToRender(<>{headerComponent}<MainContentContainer/><Footer/></>);
     }
+
     function ForgotPasswordClick(){
       OnExit();
-      setToRender(<div className='HomePage-unfocus'><div className='DarknessEffect'></div><Header loggedIn={props.isLoggedIn} onLoginClick={LoginClick} onRegisterClick={RegisterClick} disableSticky={true}></Header><MainContentContainer/><Footer/><ForgotPasswordBox onExitClick={OnExit}></ForgotPasswordBox></div>)
+      setToRender(<div className='HomePage-unfocus'>{darknessEffect}{headerComponent}<MainContentContainer/><Footer/><ForgotPasswordBox onExitClick={OnExit}/></div>)
     }
+
     function LoginClick(redirect){
-      console.log(redirect);
       window.scrollTo(0,0);
-      setToRender(<div className='HomePage-unfocus'><div className='DarknessEffect'></div><Header loggedIn={props.isLoggedIn} onLoginClick={LoginClick} onRegisterClick={RegisterClick} disableSticky={true}></Header><MainContentContainer/><Footer/><LoginBox redirect={redirect} onExitClick={OnExit} onForgotPassword={ForgotPasswordClick}></LoginBox></div>)
+      setToRender(<div className='HomePage-unfocus'>{darknessEffect}{headerComponent}<MainContentContainer/><Footer/><LoginBox redirect={redirect} onExitClick={OnExit} onForgotPassword={ForgotPasswordClick}/></div>)
     }
+
     function RegisterClick(){
       window.scrollTo(0,0);
-      setToRender(<div className='HomePage-unfocus'><div className='DarknessEffect'></div><Header loggedIn={props.isLoggedIn} onLoginClick={LoginClick} onRegisterClick={RegisterClick} disableSticky={true}></Header><MainContentContainer/><Footer/><RegisterBox onExitClick={OnExit}></RegisterBox></div>)
+      setToRender(<div className='HomePage-unfocus'>{darknessEffect}{headerComponent}<MainContentContainer/><Footer/><RegisterBox onExitClick={OnExit}/></div>)
     }
-    setToRender(<><Header loggedIn={props.isLoggedIn} onLoginClick={LoginClick} onRegisterClick={RegisterClick} disableSticky={false}></Header><MainContentContainer/><Footer/></>)
+    
+    setToRender(<>{headerComponent}<MainContentContainer/><Footer/></>)
   }, [])
 
 
