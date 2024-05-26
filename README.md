@@ -1,6 +1,6 @@
-My high school project made to demonstrate weaknesses in the Swedish equivalent of the SAT "Högskoleprovet" with a fully functioning cheat.
+My high school project. Made to demonstrate weaknesses in the Swedish equivalent of the SAT "Högskoleprovet" with a fully functioning cheat.
 
-Requirements to pull the cheat off:
+Requirements to execute the cheat:
 
 1. 2 phones
 2. 2 people who can write the test
@@ -8,10 +8,10 @@ Requirements to pull the cheat off:
 4. Something to run the server on
 
 How it works:
-The people who know how to write the cheat split the test up 50/50. At the 45 minute mark both of the writers get the letters "A,B,C,D,E" 
-sequentially communicated to them 20 times with a pause between each letter trough the earpieces. When the letter corresponding to the writers answer 
-plays they move the phone taped to their leg or somewhere else a bit to signal the correct answer trough the phones accelerometer. Once the answers are submitted they are
-appended and sent out to the customers.
+The individuals executing the cheat divide the test equally (50/50). At the 45-minute mark, both of the test-takers get the letters "A,B,C,D,E" 
+sequentially communicated to them trough the earpieces. When the letter corresponding to the writers answer plays, they move the phone taped 
+to their leg or elsewhere to signal the correct answer trough the phones accelerometer. This is done 20 times per test-taker, as each test 
+has a total of 40 questions. Once the test-takers have submitted their answers, they are combined and sent out to the customers.
 
 Problems:
 The only thing that poses a problem to this method currently are the metal detector tests, 
