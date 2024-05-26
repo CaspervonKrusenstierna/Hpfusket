@@ -5,7 +5,7 @@ import TryAgainButton from './components/tryagainbutton/TryAgainButton'
 const ResultWindow = (props) => {
   return (
     <div className='ResultWindow'>
-        <p className='ResultWindow-Text'>Du fick {props.Result} / 40</p>
+        <p className='ResultWindow-Text'>Du fick {props.Result} / 40 Rätt</p>
         <TryAgainButton></TryAgainButton>
     </div>
   )
