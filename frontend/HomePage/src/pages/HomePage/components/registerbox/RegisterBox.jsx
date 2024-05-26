@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import "./RegisterBox.css"
 import {Input, SubmitButton, ErrorMessage, ExitButton} from "../../../common/components"
 import {UserImg, UnlockImg, EnvelopeImg} from "../../../common/assets"
+import Register from './Register'
 
 
 const RegisterBox = (props) => {
@@ -9,24 +10,14 @@ const RegisterBox = (props) => {
   const registerInfo = useRef({Username: "", Email: "", Password: "", ConfirmPassword: ""});
 
   async function onSubmit(){
-    if(registerInfo.current.Password != registerInfo.current.ConfirmPassword){
+    let currRegisterInfo = registerInfo.current;
+    if(currRegisterInfo.Password != currRegisterInfo.ConfirmPassword){
       setError("Dina lösenord matchar inte.")
       return;
     }
 
-    const response = await fetch("http://127.0.0.1:3000/register", {
-      method: "POST",
-      mode: "cors",
-      cache: "no-cache",
-      credentials: "same-origin",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      redirect: "follow",
-      referrerPolicy: "no-referrer",
-      body: JSON.stringify({"name": registerInfo.current.Username, "email": registerInfo.current.Email, "password": registerInfo.current.Password})
-    }).then((res) => res.json());
-
+    let response = await Register(currRegisterInfo.Username, currRegisterInfo.Email, currRegisterInfo.Password);
+    
     if(response.success){
       props.onExitClick();
       return;
