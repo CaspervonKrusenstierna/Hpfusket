@@ -1,9 +1,0 @@
-.ExitButton{
-    width:40px;
-    background: transparent;
-    border: transparent;
-    overflow-y: hidden;
-}
-.ExitButton:hover{
-    cursor: pointer;
-}

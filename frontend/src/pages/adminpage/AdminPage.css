@@ -1,0 +1,15 @@
+.AdminPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100vw - 200px);
+    min-height: 100vh;
+    margin-left: 200px;
+}
+
+@media screen and (max-width: 700px) {
+    .AdminPage{
+        width: calc(100vw - 120px);
+        margin-left: 120px;
+    }
+  }

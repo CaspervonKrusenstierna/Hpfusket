@@ -15,13 +15,13 @@ const app = express();
 app.use(cookieParser());
 app.use(express.json());
 
-app.use("/", express.static(path.join(__dirname, "builds", "homepagebuild")));
-app.use("/dashboard", Auth.Auth0, express.static(path.join(__dirname, "builds", "publicdashbuild")));
-app.use("/dashboard/purchase", Auth.Auth0, express.static(path.join(__dirname, "builds", "publicdashbuild")));
-app.use("/dashboard/info", Auth.Auth1, express.static(path.join(__dirname, "builds", "memberdashbuild")));
-app.use("/dashboard/simulation", Auth.Auth1, express.static(path.join(__dirname, "builds", "memberdashbuild")));
-app.use("/dashboard/cheat", Auth.Auth1, express.static(path.join(__dirname, "builds", "memberdashbuild")));
-app.use("/dashboard/admin", Auth.Auth2, express.static(path.join(__dirname, "builds", "admindashbuild")));
+app.use("/", express.static(path.join(__dirname, "builds", "build")));
+app.use("/dashboard", Auth.Auth0, express.static(path.join(__dirname, "builds",  "build")));
+app.use("/dashboard/purchase", Auth.Auth0, express.static(path.join(__dirname, "builds",  "build")));
+app.use("/dashboard/info", Auth.Auth1, express.static(path.join(__dirname, "builds",  "build")));
+app.use("/dashboard/simulation", Auth.Auth1, express.static(path.join(__dirname, "builds",  "build")));
+app.use("/dashboard/cheat", Auth.Auth1, express.static(path.join(__dirname, "builds",  "build")));
+app.use("/dashboard/admin", Auth.Auth2, express.static(path.join(__dirname, "builds",  "build")));
 
 app.use(publicRouter);
 app.use(memberRouter);

@@ -1,0 +1,6 @@
+export {default as HomePage} from "./homepage/HomePage"
+export {default as PaymentPage} from "./paymentpage/PaymentPage"
+export {default as AdminPage} from "./adminpage/AdminPage"
+export {default as CheatPage} from "./cheatpage/CheatPage"
+export {default as InfoPage} from "./infopage/InfoPage"
+export {default as SimulationPage} from "./simulationpage/SimulationPage"

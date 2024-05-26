@@ -1,0 +1,12 @@
+.ContinueButton{
+    height: 50px;
+    border-color: transparent;
+    background: transparent;
+    font-size: 20px;
+    transition-duration: 0.3s;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.ContinueButton:hover{
+    cursor:pointer;
+}
