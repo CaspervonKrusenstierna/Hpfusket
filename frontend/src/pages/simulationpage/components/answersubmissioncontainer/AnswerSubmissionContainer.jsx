@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import AnswerSubmission from './components/answersubmission/AnswerSubmission'
 import "./AnswerSubmissionContainer.css"
 import AnswerSubmissionButton from './components/answersubmissionbutton/AnswerSubmissionButton';
@@ -16,7 +16,7 @@ const AnswerSubmissionContainer = (props) => {
   }, [])
   return (
     <div className='AnswerSubmissionContainer'> 
-        {AnswerSubmission.map(s => {return s})}
+        {answerSubmissions.map(s => {return s})}
         <AnswerSubmissionButton onClick={() => {props.onAnswersSubmission(Answers)}}></AnswerSubmissionButton>
     </div>
   )
