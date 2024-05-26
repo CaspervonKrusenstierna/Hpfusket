@@ -14,7 +14,7 @@ to their leg or elsewhere to signal the correct answer trough the phones acceler
 has a total of 40 questions. Once the test-takers have submitted their answers, they are combined and sent out to the customers.
 
 Problems:
-The only thing that poses a problem to this method currently are the metal detector tests, 
+The only issue that this cheat faces currently are the metal detector tests,
 although they are rare and the consequences minimal as you are not legally obliged to go trough them.
 If you refuse you won't be allowed to take the test for 2 years.
 
