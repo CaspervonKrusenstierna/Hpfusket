@@ -3,7 +3,7 @@ My high school project. Made to demonstrate weaknesses in the Swedish equivalent
 Requirements to execute the cheat:
 
 1. 2 phones
-2. 2 people who can write the test
+2. 2 persons who can write the test
 3. 2 PingaOculto spy earpieces or equivalent
 4. Something to run the server on
 
