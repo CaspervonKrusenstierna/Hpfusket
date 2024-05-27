@@ -10,8 +10,9 @@ const SideBar = (props) => {
   return (
     <div className='SideBar'>
         <div>
-        <SideBarTopContainer></SideBarTopContainer>
-        <SideBarItemContainer privilege={props.privilege}></SideBarItemContainer></div>
+          <SideBarTopContainer></SideBarTopContainer>
+          <SideBarItemContainer privilege={props.privilege}></SideBarItemContainer>
+        </div>
         <SideBarBottomContainer></SideBarBottomContainer>
     </div>
   )
