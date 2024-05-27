@@ -10,7 +10,7 @@ Requirements to execute the cheat:
 How it works:
 The individuals executing the cheat divide the test questions equally. At the 45-minute mark, both of the test-takers get the letters "A,B,C,D,E" 
 sequentially communicated to them trough the earpieces. When the letter corresponding to the writers answer plays, they move the phone taped 
-to their leg or elsewhere to signal the correct answer trough the phones accelerometer. This is done 20 times per test-taker, as each test 
+to their leg or elsewhere to signal it trough the phones accelerometer. This is done 20 times per test-taker, as each test 
 has a total of 40 questions. Once the test-takers have submitted their answers, they are combined and sent out to the customers wearing the 
 same earpieces.
 
